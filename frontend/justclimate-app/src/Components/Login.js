@@ -27,25 +27,77 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h2>Login</h2>
-      <form>
-        <label>
+    <div style={styles.container}>
+      <h2 style={styles.heading}>Login</h2>
+      <form style={styles.form}>
+        <label style={styles.label}>
           Email:
-          <input type="email" name="email" value={formData.email} onChange={handleChange} />
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            style={styles.input}
+          />
         </label>
         <br />
-        <label>
+        <label style={styles.label}>
           Password:
-          <input type="password" name="password" value={formData.password} onChange={handleChange} />
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+            style={styles.input}
+          />
         </label>
         <br />
-        <button type="button" onClick={handleLogin}>
+        <button type="button" onClick={handleLogin} style={styles.button}>
           Log In
         </button>
       </form>
     </div>
   );
+};
+
+const styles = {
+  container: {
+    textAlign: 'center',
+    padding: '20px',
+    border: '1px solid #ccc',
+    borderRadius: '8px',
+    maxWidth: '400px',
+    margin: 'auto',
+    marginTop: '50px',
+  },
+  heading: {
+    fontSize: '24px',
+    marginBottom: '20px',
+  },
+  form: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  label: {
+    marginBottom: '10px',
+  },
+  input: {
+    padding: '8px',
+    fontSize: '16px',
+    width: '100%',
+    marginBottom: '15px',
+    boxSizing: 'border-box',
+  },
+  button: {
+    backgroundColor: '#5f9ea0', // Soft Blue or Turquoise
+    color: 'white',
+    padding: '10px',
+    fontSize: '16px',
+    cursor: 'pointer',
+    border: 'none',
+    borderRadius: '4px',
+  },
 };
 
 export default Login;
