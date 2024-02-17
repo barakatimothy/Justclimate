@@ -73,8 +73,8 @@ This project is licensed under the MIT License.
 
 POST http://127.0.0.1:8000/api/register/ 
 Content-Type: application/json
-
 {
+
        "name": "muhovo", 
        
        "email": "muhovo@cu.com", 
@@ -91,6 +91,7 @@ POST http://127.0.0.1:8000/api/login/
 Content-Type: application/json
 
 {
+
     "email": "muhovo@cu.com", 
     
     "password": "123Qw1245",
