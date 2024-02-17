@@ -19,31 +19,36 @@ Follow these steps to set up and run the JustClimate Django project locally:
 Create a Virtual Environment:
 
 
+
 python -m venv venv
 Activate the Virtual Environment:
 
 On Windows:
 
-
 .\venv\Scripts\activate
+
 On macOS/Linux:
 
 
 source venv/bin/activate
+
 Install Dependencies:
 
 
 pip install -r requirements.txt
-Run Migrations:
+
+### Run Migrations:
 python manage.py makemigrations
 python manage.py migrate
+
+### (Optional)
 Create Superuser (Optional):
 
 If you want to access the Django admin interface, create a superuser:
 
 
 python manage.py createsuperuser
-Follow the prompts to create a superuser account.
+ #### Follow the prompts to create a superuser account.
 
 Run the Development Server:
 
@@ -54,8 +59,8 @@ Access the Admin Interface (Optional):
 
 If you created a superuser, access the Django admin interface at http://127.0.0.1:8000/admin/.
 
-Contributing
+#### Contributing
 If you'd like to contribute to the project, please follow our contribution guidelines.
 
-License
+#### License
 This project is licensed under the MIT License.
