@@ -75,10 +75,13 @@ POST http://127.0.0.1:8000/api/register/
 Content-Type: application/json
 
 {
-    "name": "muhovo", 
-    "email": "muhovo@cu.com", 
-    "password": "123Qw1245", 
-    "Mobile_No": "0708419386"
+       "name": "muhovo", 
+       
+       "email": "muhovo@cu.com", 
+      
+       "password": "123Qw1245", 
+       
+       "Mobile_No": "0708419386"
 }
 
 ###login
@@ -89,6 +92,7 @@ Content-Type: application/json
 
 {
     "email": "muhovo@cu.com", 
+    
     "password": "123Qw1245",
 }
 
