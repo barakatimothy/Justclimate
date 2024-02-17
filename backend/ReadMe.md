@@ -64,3 +64,37 @@ If you'd like to contribute to the project, please follow our contribution guide
 
 #### License
 This project is licensed under the MIT License.
+
+
+
+
+#### Endpoints 
+
+
+POST http://127.0.0.1:8000/api/register/ 
+Content-Type: application/json
+
+{
+    "name": "muhovo", 
+    "email": "muhovo@cu.com", 
+    "password": "123Qw1245", 
+    "Mobile_No": "0708419386"
+}
+
+###login
+
+Send request 
+POST http://127.0.0.1:8000/api/login/ 
+Content-Type: application/json
+
+{
+    "email": "muhovo@cu.com", 
+    "password": "123Qw1245",
+}
+
+
+
+
+
+or you can find them inside the root foIder a fiIe caIIed test.rest 
+tiII next time github. 
