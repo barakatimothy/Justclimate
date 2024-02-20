@@ -6,6 +6,7 @@ import InteractiveMaps from './components/InteractiveMaps';
 import AdvocacyToolkit from './components/AdvocacyToolkit';
 import UserProfile from "./components/UserProfile";
 import PushNotifications from './components/PushNotifications';
+import './App.css'
 
 function App() {
   return (
