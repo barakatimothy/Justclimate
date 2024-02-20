@@ -1,0 +1,40 @@
+/* AdvocacyToolkit.css */
+.advocacy-toolkit-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 40px;
+  }
+  
+  .tool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .tool-icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+    color: #3498db; /* Change the color to your preference */
+  }
+  
+  .tool-content {
+    text-align: left;
+  }
+  
+  .tool h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .tool p {
+    font-size: 1rem;
+  }
+  

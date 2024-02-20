@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import NewsFeed from "./components/NewsFeed";
+import CommunityEmpowermentHub from "./components/CommunityEmpowermentHub";
+import EducationalResources from "./components/EducationalResources";
+import ClimateJusticeEventsCalendar from "./components/ClimateJusticeEventsCalendar";
+import InteractiveMaps from './components/InteractiveMaps'; 
+import AdvocacyToolkit from './components/AdvocacyToolkit';
+import UserProfile from "./components/UserProfile";
+import PushNotifications from './components/PushNotifications';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserProfile/>
+      <NewsFeed />
+      <CommunityEmpowermentHub/>
+      <EducationalResources />
+      <ClimateJusticeEventsCalendar/>
+      <InteractiveMaps/>
+      <AdvocacyToolkit/>
+      <PushNotifications />
     </div>
   );
 }
-
 export default App;
