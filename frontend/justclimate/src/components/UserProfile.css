@@ -2,16 +2,21 @@
 .user-profile-container {
     text-align: center;
     padding: 40px;
+    background-color:#0a990f;
+    text-align: right; /* Align the text to the right */
   }
   
   h2 {
     margin-bottom: 20px;
+    text-align: right;
+    
   }
   
   .profile-section {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: flex-end;
   }
   
   .avatar-container {
@@ -23,16 +28,17 @@
     height: 150px;
     border-radius: 50%;
     margin-right: 20px;
+    margin-left: 20px;
   }
   
   input[type="file"] {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0; 
     opacity: 0;
     cursor: pointer;
+    background-color: black;
   }
-  
   .profile-details {
     text-align: left;
     max-width: 400px;
@@ -51,6 +57,17 @@
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+  .green-indicator {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
   
-  /* Add additional styling for profile customization and story-sharing elements as needed */
-  
+  .green-indicator.hidden {
+    display: none;
+  }

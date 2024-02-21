@@ -1,22 +1,20 @@
+// LandingPage.js
+import React from 'react';
 import GoogleSignInButton from './GoogleSignInButton';
-import { useNavigate } from 'react-router-dom'; 
 import LoginForm from './LoginForm';
+import { useNavigate } from 'react-router-dom';
 import './LandingPage.css';
 
 const LandingPage = ({ handleLogin }) => {
-  const navigate = useNavigate(); // Use useNavigate instead of useHistory
+  const navigate = useNavigate();
 
   const handleGoogleLoginSuccess = (response) => {
-    // Implement your login logic using the Google response
     console.log('Google login success:', response);
-    // For testing, assume the user is authenticated
     handleLogin();
-    // Redirect to the main page after a successful login
-    navigate('/main'); // Change the path as needed
+    navigate('/main');
   };
 
   const handleGoogleLoginFailure = (error) => {
-    // Handle login failure
     console.error('Google login failure:', error);
   };
 
@@ -27,7 +25,7 @@ const LandingPage = ({ handleLogin }) => {
         <p>Empowering communities for climate justice.</p>
       </div>
       <div>
-        <LoginForm/>
+        <LoginForm handleLogin={handleLogin} />
       </div>
       <div className="google-login-container">
         <GoogleSignInButton onSuccess={handleGoogleLoginSuccess} onFailure={handleGoogleLoginFailure} />
@@ -37,6 +35,7 @@ const LandingPage = ({ handleLogin }) => {
 };
 
 export default LandingPage;
+
 
 
 

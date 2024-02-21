@@ -1,9 +1,12 @@
-
-import React from 'react';
+// EducationalResources.js
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './EducationalResources.css';
 
 const EducationalResources = () => {
-  // Sample educational courses data
+  const [enrolledCourses, setEnrolledCourses] = useState([]);
+  const navigate = useNavigate();
+
   const courses = [
     {
       id: 1,
@@ -22,6 +25,13 @@ const EducationalResources = () => {
     },
   ];
 
+  const enrollHandler = (courseId) => {
+    if (!enrolledCourses.includes(courseId)) {
+      setEnrolledCourses([...enrolledCourses, courseId]);
+    }
+    navigate(`/modules/${courseId}`);
+  };
+
   return (
     <div>
       <h2>Educational Resources</h2>
@@ -30,7 +40,7 @@ const EducationalResources = () => {
           <div key={course.id} className="course-card">
             <h3>{course.title}</h3>
             <p>{course.description}</p>
-            <button>Enroll Now</button>
+            <button onClick={() => enrollHandler(course.id)}>Enroll Now</button>
           </div>
         ))}
       </div>
