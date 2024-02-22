@@ -67,6 +67,6 @@ const InteractiveMaps = ({ google }) => {
 };
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyDOeLssy2xaRvClUoLDr_zShuoUNrEvyzs', // Replace with your correct API key
+  apiKey: '', // Replace with your correct API key
 })(InteractiveMaps);
 
